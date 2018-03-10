@@ -1,0 +1,10 @@
+.chipSizeL {
+  height: 64px;
+  font-size: 27px;
+  border-radius: 32px;
+}
+
+.chipSizeL > img {
+  height: 64px;
+  width: 64px;
+}

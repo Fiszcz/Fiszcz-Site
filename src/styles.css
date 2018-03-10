@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+.centerElement {
+  width: 100px !important;
+  display: block !important;
+  margin: auto !important;
+}
+
+.mt15px {
+  margin-top: 15px;
+}
+
+div {
+  font-family: 'Advent Pro', sans-serif;
+}
+
+.black-text-shadow {
+  text-shadow: 2px 2px 0px #000000;
+}
+
+.white-text-shadow {
+  text-shadow: 2px 2px 0px #FFFFFF;
+}
