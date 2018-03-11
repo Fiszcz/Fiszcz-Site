@@ -8,3 +8,15 @@
   height: 64px;
   width: 64px;
 }
+
+.tabs .tab a {
+  color: #ff8d13;
+}
+
+.tabs .tab a:hover, .tabs .tab a.active {
+  color: #ffc642;
+}
+
+.fontAdventPro {
+  font-family: 'Advent Pro', sans-serif;
+}
