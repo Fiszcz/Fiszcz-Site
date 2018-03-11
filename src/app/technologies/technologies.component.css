@@ -1,0 +1,24 @@
+.card {
+  padding: 0px;
+}
+
+.card .card-content {
+  padding: 0px;
+}
+
+img {
+  width: auto;
+  height: 100%;
+}
+
+.card .card-image img {
+  top: 5px;
+  padding-bottom: 5px;
+  margin: auto auto;
+  width: 90%;
+  height: 90%;
+}
+
+.card:hover {
+  background-color: aqua;
+}

@@ -1,3 +1,62 @@
-<p>
-  education works!
-</p>
+<h1 class="center-align">
+  Edukacja
+</h1>
+
+<div class="row">
+  <div class="col m2 offset-m1">
+    <img src="../../assets/images/logo-education/logo-politechnika-warszawska.gif" class="circle responsive-img white">
+  </div>
+  <div class="col m9">
+    <h4>Politechnika Warszawska</h4>
+    <h6>Wydział Elektryczny</h6>
+    <p>Stacjonarne studia inżynieryjskie informatyki. (2015-2019)</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col m2 offset-m1">
+    <img src="../../assets/images/logo-education/pijarska-logo.gif" class="circle responsive-img white">
+  </div>
+  <div class="col m9">
+    <h4>Pijarskie Szkoły Królowej Pokoju w Łowiczu</h4>
+    <h6>Szkoła podstawowa - Gimnazjum - Liceum</h6>
+    <p>Liceum klasa o profilu politechniczno-ekonomicznym. (2003-2015)</p>
+  </div>
+</div>
+
+
+<hr class="style">
+
+<p class="center-align">Poniżej zamieszczam moją listę ocen ze studiów (jakby kogoś to bardzo interesowało.....)</p>
+
+<ul class="collapsible popout" data-collapsible="accordion">
+  <li *ngFor="let semester of studyITb">
+    <div class="collapsible-header"><i class="material-icons">view_list</i>Semestr {{semester.name}}<span *ngIf="semester.scholarship" class="badge lime accent-2">Stypendium naukowe</span></div>
+    <div class="collapsible-body"><span><table class="highlight">
+        <thead>
+          <tr>
+              <th>Przedmiot</th>
+              <th>ECTS</th>
+              <th>Ocena</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr *ngFor="let subject of semester.degrees">
+            <td>{{subject.subject}}</td>
+            <td>{{subject.ects}}</td>
+            <td><span>
+              <!--class="badge white"-->
+                      <!--[ngClass]="{-->
+    <!--'green darken-3':subject.mark === 8,-->
+    <!--'lime accent-2':subject.mark === 8,-->
+    <!--'light-green accent-2':subject.mark === 8-->
+
+  <!--}"-->
+            {{subject.mark}}</span></td>
+          </tr>
+        </tbody>
+      </table></span></div>
+  </li>
+</ul>
+
