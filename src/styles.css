@@ -9,8 +9,12 @@
   margin-top: 15px;
 }
 
-mt20px {
+.mt20px {
   margin-top: 20px;
+}
+
+.padding00I {
+  padding: 0 0 !important;
 }
 
 .black-text-shadow {

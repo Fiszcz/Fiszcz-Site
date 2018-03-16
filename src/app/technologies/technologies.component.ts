@@ -14,16 +14,16 @@ export class TechnologiesComponent implements OnInit {
 
   technologies = {
     programing : [
-      {lang: "C", image: "../../assets/images/technologies/logo-tech/c-logo.svg"},
+      {lang: "C", image: "../../assets/images/technologies/logo-tech/c-logo.png"},
       {lang: "C++", image: "../../assets/images/technologies/logo-tech/cpp_logo.png"},
       {lang: "Java", image: "../../assets/images/technologies/logo-tech/java-logo.png"},
       {lang: "Python", image: "../../assets/images/technologies/logo-tech/python-logo.png"}
     ],
     web : [
+      {lang: "AngularJS", image: "../../assets/images/technologies/logo-tech/angular-js-logo.png"},
       {lang: "HTML", image: "../../assets/images/technologies/logo-tech/html-logo.png"},
       {lang: "CSS", image: "../../assets/images/technologies/logo-tech/css-logo.png"},
       {lang: "JavaScript", image: "../../assets/images/technologies/logo-tech/js-logo.png"},
-      {lang: "AngularJS", image: "../../assets/images/technologies/logo-tech/angular-js-logo.png"},
       {lang: "Bootstrap 4", image: "../../assets/images/technologies/logo-tech/bootstrap-4-logo.png"},
       {lang: "Angular 4", image: "../../assets/images/technologies/logo-tech/angular-4-logo.png"},
       {lang: "Materialize", image: "../../assets/images/technologies/logo-tech/materialize-logo.png"},

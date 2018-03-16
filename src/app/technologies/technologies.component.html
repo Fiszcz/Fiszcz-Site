@@ -8,44 +8,50 @@
 <div class="center-align">
   <h4>Języki programowania ogólnego przeznaczenia</h4>
   <div class="row">
+    <div class="row col s12 m10 offset-m1">
     <div class="col s3 m2" *ngFor="let technology of technologies.programing">
-      <div class="card z-depth-5">
+      <div class="card">
         <div class="card-content">
           <div class="card-image">
             <img [src]="technology.image">
           </div>
-          <span class="card-title center-align">{{technology.lang}}</span>
+          <span class="card-content center-align">{{technology.lang}}</span>
         </div>
       </div>
     </div>
   </div>
+  </div>
 
   <h4>Technologie webowe</h4>
   <div class="row">
+  <div class="row col s12 m10 offset-m1">
     <div class="col s3 m2" *ngFor="let technology of technologies.web">
       <div class="card">
         <div class="card-content">
           <div class="card-image">
             <img [src]="technology.image">
           </div>
-          <span class="card-title center-align">{{technology.lang}}</span>
+          <span class="card-content center-align">{{technology.lang}}</span>
         </div>
       </div>
     </div>
   </div>
+  </div>
 
   <h4>Technologie bazodanowe</h4>
   <div class="row">
-    <div class="col s4 m2" *ngFor="let technology of technologies.database">
+    <div class="row col s12 m10 offset-m1">
+    <div class="col s3 m2" *ngFor="let technology of technologies.database">
       <div class="card">
         <div class="card-content">
           <div class="card-image">
             <img [src]="technology.image">
           </div>
-          <span class="card-title center-align">{{technology.lang}}</span>
+          <span class="card-content center-align">{{technology.lang}}</span>
         </div>
       </div>
     </div>
+  </div>
   </div>
 
   <h3>Technologie programistyczne</h3>
