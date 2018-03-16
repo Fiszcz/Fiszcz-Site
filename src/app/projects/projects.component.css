@@ -1,3 +1,48 @@
 .card-title {
   font-size: xx-large;
 }
+
+
+/*Animation for images */
+img { transition: all 400ms ease-in-out; }
+/*img:hover { transform: scale3d(1.2, 1.2, 1); }*/
+
+.card-image {
+  overflow: hidden;
+}
+
+.card:hover img { transform: scale3d(1.2, 1.2, 1); }
+
+.btn {
+  background-color: white;
+  color: coral;
+  border: 2px solid coral;
+  margin: auto;
+  height: 36px;
+  line-height: 31px;
+}
+
+.btn:hover {
+  background-color: rgba(255, 220, 172, 0.73);
+}
+
+.btn-close {
+  background-color: white;
+  color: rgba(220, 73, 75, 0.89);
+  border: 2px solid rgba(220, 73, 75, 0.89);
+  margin: auto;
+  height: 36px;
+  line-height: 31px;
+}
+
+.modal {
+  width: 95%;
+  height: 94%;
+  max-height: 94%;
+  top: 2% !important;
+  bottom: 2%;
+}
+
+.modal .modal-content {
+  padding: 5px;
+}

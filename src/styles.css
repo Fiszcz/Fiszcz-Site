@@ -9,6 +9,10 @@
   margin-top: 15px;
 }
 
+mt20px {
+  margin-top: 20px;
+}
+
 .black-text-shadow {
   text-shadow: 2px 2px 0px #000000;
 }

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+declare var jquery:any;
+declare var $ :any;
 
 @Component({
   selector: 'app-contact',
@@ -10,5 +12,8 @@ export class ContactComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    $(document).ready(function(){
+      $('.tooltipped').tooltip({delay: 50});
+    });
   }
 }
