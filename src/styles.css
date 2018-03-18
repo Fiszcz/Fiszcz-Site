@@ -24,3 +24,11 @@
 .white-text-shadow {
   text-shadow: 2px 2px 0px #FFFFFF;
 }
+
+.toRight {
+  text-align: right;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}

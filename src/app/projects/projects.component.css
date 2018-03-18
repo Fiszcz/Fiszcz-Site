@@ -36,7 +36,7 @@ img { transition: all 400ms ease-in-out; }
 }
 
 .modal {
-  width: 95%;
+  width: 80%;
   height: 94%;
   max-height: 94%;
   top: 2% !important;
@@ -45,4 +45,39 @@ img { transition: all 400ms ease-in-out; }
 
 .modal .modal-content {
   padding: 5px;
+}
+
+.modal.modal-fixed-footer .modal-content {
+  height: calc(100% - 10px);
+}
+
+.row-padding {
+  padding: 0 0.23rem;
+}
+
+.row .col {
+  padding: 0 0.47rem;
+}
+
+.row-margin-modal-header {
+  margin-bottom: auto;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+@media only screen and (max-width: 992px) {
+  .modal {
+    width: 97%;
+    height: 96%;
+  }
+}
+
+.widthPdf {
+  width: 72%;
+}
+
+@media only screen and (max-width: 992px) {
+  .widthPdf {
+    width: 98%;
+  }
 }
