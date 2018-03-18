@@ -9,54 +9,91 @@
   <h4>Języki programowania ogólnego przeznaczenia</h4>
   <div class="row">
     <div class="row col s12 m10 offset-m1">
-    <div class="col s3 m2" *ngFor="let technology of technologies.programing">
-      <div class="card">
+      <div class="col s3 m2" *ngFor="let technology of technologies.programing">
+        <div class="card card-tech" (click)="programmingInfo(technology.lang, 'programming')" [ngClass]="{'selectedTechnology':technology.lang === selectedTechnology}">
+          <div class="card-content">
+            <div class="card-image card-image-tech">
+              <img [src]="technology.image">
+            </div>
+            <span class="card-content center-align">{{technology.lang}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row col s12 m10 offset-m1 card z-depth-5" *ngIf="sel == 'programming'" [@myAnimation]>
+      <h5>Swoje pierwsze kroki w "{{selectedTechnology}}" stawiałem dzięki:</h5>
+      <div class="col s4 m3" *ngFor="let source of sourceKnowledge">
+        <div target="_blank" class="card">
         <div class="card-content">
           <div class="card-image">
-            <img [src]="technology.image">
+            <img [src]="source.image">
           </div>
-          <span class="card-content center-align">{{technology.lang}}</span>
+          <span class="card-content center-align"><b>{{source.name}}</b></span>
+        </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
+
+  <div class="divider"></div>
 
   <h4>Technologie webowe</h4>
   <div class="row">
-  <div class="row col s12 m10 offset-m1">
-    <div class="col s3 m2" *ngFor="let technology of technologies.web">
-      <div class="card">
-        <div class="card-content">
-          <div class="card-image">
-            <img [src]="technology.image">
+    <div class="row col s12 m10 offset-m1">
+      <div class="col s3 m2" *ngFor="let technology of technologies.web">
+        <div class="card card-tech" (click)="programmingInfo(technology.lang, 'web')" [ngClass]="{'selectedTechnology':technology.lang === selectedTechnology}">
+          <div class="card-content">
+            <div class="card-image card-image-tech">
+              <img [src]="technology.image">
+            </div>
+            <span class="card-content center-align">{{technology.lang}}</span>
           </div>
-          <span class="card-content center-align">{{technology.lang}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="row col s12 m10 offset-m1 card z-depth-5" *ngIf="sel == 'web'" [@myAnimation]>
+      <h5>Swoje pierwsze kroki w "{{selectedTechnology}}" stawiałem dzięki:</h5>
+      <div class="col s4 m3" *ngFor="let source of sourceKnowledge">
+        <div target="_blank" class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <img [src]="source.image">
+            </div>
+            <span class="card-content center-align"><b>{{source.name}}</b></span>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
+
+  <div class="divider"></div>
 
   <h4>Technologie bazodanowe</h4>
   <div class="row">
     <div class="row col s12 m10 offset-m1">
-    <div class="col s3 m2" *ngFor="let technology of technologies.database">
-      <div class="card">
-        <div class="card-content">
-          <div class="card-image">
-            <img [src]="technology.image">
+      <div class="col s3 m2" *ngFor="let technology of technologies.database">
+        <div class="card card-tech" (click)="programmingInfo(technology.lang, 'database')" [ngClass]="{'selectedTechnology':technology.lang === selectedTechnology}">
+          <div class="card-content">
+            <div class="card-image card-image-tech">
+              <img [src]="technology.image">
+            </div>
+            <span class="card-content center-align">{{technology.lang}}</span>
           </div>
-          <span class="card-content center-align">{{technology.lang}}</span>
+        </div>
+      </div>
+    </div>
+    <div class="row col s12 m10 offset-m1 card z-depth-5" *ngIf="sel == 'database'" [@myAnimation]>
+      <h5>Swoje pierwsze kroki w "{{selectedTechnology}}" stawiałem dzięki:</h5>
+      <div class="col s4 m3" *ngFor="let source of sourceKnowledge">
+        <div target="_blank" class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <img [src]="source.image">
+            </div>
+            <span class="card-content center-align"><b>{{source.name}}</b></span>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
-
-  <h3>Technologie programistyczne</h3>
-
-  <h3>Technologie informatyczne</h3>
-
-  <h3>Pozostałe</h3>
 </div>

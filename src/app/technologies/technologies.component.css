@@ -1,5 +1,7 @@
 .card {
   padding: 0px;
+  transform-origin: top;
+  overflow:hidden;
 }
 
 .card .card-content {
@@ -11,7 +13,7 @@ img {
   height: 100%;
 }
 
-.card .card-image img {
+.card-image-tech {
   top: 5px;
   padding-bottom: 5px;
   margin: auto auto;
@@ -19,6 +21,10 @@ img {
   height: 90%;
 }
 
-.card:hover {
-  background-color: aqua;
+.card-tech:hover {
+  background-color: rgba(255, 212, 149, 0.71);
+}
+
+.selectedTechnology {
+  background-color: rgb(255, 192, 120) !important;
 }
