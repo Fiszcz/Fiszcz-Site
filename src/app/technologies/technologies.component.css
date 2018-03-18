@@ -1,7 +1,5 @@
 .card {
-  padding: 0px;
-  transform-origin: top;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .card .card-content {
@@ -27,4 +25,8 @@ img {
 
 .selectedTechnology {
   background-color: rgb(255, 192, 120) !important;
+}
+
+.divider {
+  height: 2px;
 }

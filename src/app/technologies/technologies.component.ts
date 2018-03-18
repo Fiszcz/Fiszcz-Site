@@ -17,14 +17,14 @@ import {
       [
         transition(
           ':enter', [
-            style({transform: 'scaleY(0)', opacity: 0}),
-            animate('300000ms', style({transform: 'scaleY(1)',transition: "height .5s", 'opacity': 1}))
+            style({'max-height': "0px", opacity: 0}),
+            animate('200ms', style({'max-height': "350px", 'opacity': 1}))
           ]
         ),
         transition(
           ':leave', [
-            style({transform: 'scaleY(1)', transition: "height .5s", 'opacity': 1}),
-            animate('200000ms', style({transform: 'scaleY(0)', 'opacity': 0}))
+            style({'max-height': "350px", 'opacity': 1}),
+            animate('200ms', style({'max-height': "0px", opacity: 0}))
           ]
         )]
     )
