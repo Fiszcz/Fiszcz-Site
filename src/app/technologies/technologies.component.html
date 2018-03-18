@@ -20,9 +20,9 @@
         </div>
       </div>
     </div>
-    <div class="row col s12 m10 offset-m1 card z-depth-5" *ngIf="sel == 'programming'" [@myAnimation]>
+    <div class="row col s12 m10 offset-m1 card z-depth-5" *ngIf="sel == 'programming'" [@collapseEffect]>
       <h5>Swoje pierwsze kroki w "{{selectedTechnology}}" stawiałem dzięki:</h5>
-      <div class="col s4 m3" *ngFor="let source of sourceKnowledge">
+      <div class="col s4 m3" *ngFor="let source of sourceKnowledge" [@changeTechInType]>
         <div target="_blank" class="card">
         <div class="card-content">
           <div class="card-image">
@@ -51,9 +51,9 @@
         </div>
       </div>
     </div>
-    <div class="row col s12 m10 offset-m1 card z-depth-5" *ngIf="sel == 'web'" [@myAnimation]>
+    <div class="row col s12 m10 offset-m1 card z-depth-5" *ngIf="sel == 'web'" [@collapseEffect]>
       <h5>Swoje pierwsze kroki w "{{selectedTechnology}}" stawiałem dzięki:</h5>
-      <div class="col s4 m3" *ngFor="let source of sourceKnowledge">
+      <div class="col s4 m3" *ngFor="let source of sourceKnowledge" [@changeTechInType]>
         <div target="_blank" class="card">
           <div class="card-content">
             <div class="card-image">
@@ -82,9 +82,9 @@
         </div>
       </div>
     </div>
-    <div class="row col s12 m10 offset-m1 card z-depth-5" *ngIf="sel == 'database'" [@myAnimation]>
+    <div class="row col s12 m10 offset-m1 card z-depth-5" *ngIf="sel == 'database'" [@collapseEffect]>
       <h5>Swoje pierwsze kroki w "{{selectedTechnology}}" stawiałem dzięki:</h5>
-      <div class="col s4 m3" *ngFor="let source of sourceKnowledge">
+      <div class="col s4 m3" *ngFor="let source of sourceKnowledge" [@changeTechInType]>
         <div target="_blank" class="card">
           <div class="card-content">
             <div class="card-image">

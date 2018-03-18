@@ -13,7 +13,7 @@ import {
   styleUrls: ['./technologies.component.css'],
   animations: [
     trigger(
-      'myAnimation',
+      'collapseEffect',
       [
         transition(
           ':enter', [
@@ -25,6 +25,16 @@ import {
           ':leave', [
             style({'max-height': "350px", 'opacity': 1}),
             animate('200ms', style({'max-height': "0px", opacity: 0}))
+          ]
+        )]
+    ),
+    trigger(
+      'changeTechInType',
+      [
+        transition(
+          ':enter', [
+            style({opacity: 0}),
+            animate('300ms', style({'opacity': 1}))
           ]
         )]
     )
