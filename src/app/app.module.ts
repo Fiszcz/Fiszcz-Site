@@ -11,6 +11,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { TechnologiesComponent } from './technologies/technologies.component';
 import { EducationComponent } from './education/education.component';
 import { ContactComponent } from './contact/contact.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { ContactComponent } from './contact/contact.component';
     ProjectsComponent,
     TechnologiesComponent,
     EducationComponent,
-    ContactComponent
+    ContactComponent,
+    FooterComponent
   ],
   imports: [
     MaterializeModule,

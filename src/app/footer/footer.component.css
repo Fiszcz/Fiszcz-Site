@@ -1,0 +1,9 @@
+.page-footer {
+  background-color: #ff9728;
+  padding-top: 12px;
+}
+
+.page-footer .footer-copyright {
+  padding: 0px 0px;
+  min-height: 0px;
+}
