@@ -13,7 +13,7 @@
         <p>Aplikacja webowa z możliwością tworzenia interaktywnych map podróży na podstawie zdjęć z zapisananymi geotagami</p>
       </div>
       <div class="card-action">
-        <a class="waves-effect btn modal-trigger" href="#modal1">Zobacz dokumentację</a>
+        <a class="waves-effect btn modal-trigger" href="#modal1" (click)="changeDocumentation('youmap')">Zobacz dokumentację</a>
       </div>
     </div>
 
@@ -54,7 +54,7 @@
         <p>Portal możliwy do zastosowania jako serwis do poszukiwania pracy/praktyk w wąskim zakresie branżowym.</p>
       </div>
       <div class="card-action">
-        <a class="waves-effect btn modal-trigger" href="#modal1">Zobacz dokumentację</a>
+        <a class="waves-effect btn modal-trigger" (click)="changeDocumentation('portalpracy')" href="#modal1">Zobacz dokumentację</a>
       </div>
     </div>
 
@@ -67,7 +67,7 @@
         <p>Program umożliwiający generację fraktali o wybranych parametrach. Możliwy dokładny podgląd i zapis do pliku graficznego.</p>
       </div>
       <div class="card-action">
-        <a class="waves-effect btn modal-trigger" href="#modal1">Zobacz dokumentację</a>
+        <a class="waves-effect btn modal-trigger" (click)="changeDocumentation('generatorfraktali')" href="#modal1">Zobacz dokumentację</a>
       </div>
     </div>
 
@@ -116,7 +116,7 @@
     </div>
     <!--<div class="divider"></div>-->
     <div class="center-align" style="height: 90%">
-      <embed src="https://drive.google.com/file/d/0B9vJqTbd6MhaSXJVcmp3TWdHOU0/preview" class="widthPdf" height="100%">
+      <embed [src]="sanitizer.bypassSecurityTrustResourceUrl(documentation)" class="widthPdf" height="100%">
     </div>
   </div>
 </div>
