@@ -32,3 +32,19 @@
 .overflow-hidden {
   overflow: hidden;
 }
+
+.fontSize16 {
+  font-size: 16px;
+}
+
+.fontSize17 {
+  font-size: 17px;
+}
+
+.mb5px {
+  margin-bottom: 5px !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
