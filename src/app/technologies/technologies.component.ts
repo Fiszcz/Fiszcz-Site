@@ -72,7 +72,7 @@ export class TechnologiesComponent implements OnInit {
   sources = new Map();
   sourceKnowledge;
   selectedTechnology;
-  sel = false;
+  sel = "";
 
   technologies = {
     programing : [
@@ -103,7 +103,7 @@ export class TechnologiesComponent implements OnInit {
   programmingInfo = function (lang, type) {
     if(this.selectedTechnology == lang) {
       this.selectedTechnology = false;
-      this.sel = false;
+      this.sel = "";
     }
     else {
       this.selectedTechnology = lang;

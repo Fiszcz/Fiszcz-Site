@@ -2,6 +2,7 @@ import { MaterializeModule } from 'angular2-materialize';
 
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
 import { NgModule } from '@angular/core';
 
 
@@ -27,7 +28,8 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     MaterializeModule,
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
